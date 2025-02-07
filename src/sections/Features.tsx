@@ -1,5 +1,9 @@
 import Tag from "@/components/Tag";
 import FeatureCard from "@/components/FeatureCard";
+import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg"
+import avatar2 from "@/assets/images/avatar-florence-shaw.jpg"
+import avatar3 from "@/assets/images/avatar-lula-meyers.jpg"
+import avatar4 from "@/assets/images/avatar-owen-garcia.jpg"
 
 const features = [
     "Asset Library",
@@ -28,7 +32,7 @@ export default function Features() {
                      title="Real time Collaboration" 
                      description="Work together seamlessly with conflict-free editing"
                      >
-                        
+
 
                      </FeatureCard>
 
