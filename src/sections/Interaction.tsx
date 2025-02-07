@@ -1,4 +1,5 @@
 import Tag from "@/components/Tag"; 
+import figmaIcon from "@/assets/images/figma-logo.svg"
 
 const text = `You're racing to create exceptional work, but traditional design tools slow you down with unnecessary complexity and steep learning curves.`;
 
@@ -13,7 +14,7 @@ export default function Introduction() {
                     <span> Your creative process deserver better. </span> {" "}
                     <span className="text-white/15">{text}</span>
                     <span className="text-lime-400 block">That&apos;s why we built Layers.</span>
-                    
+
                 </div>
             </div>
         </section>
