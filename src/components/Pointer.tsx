@@ -10,7 +10,7 @@ export default function Pointer() {
                 strokeWidth="2"
                 stroke-linecap="round"
                 stroke-linejoin="round"
-                className="feather feather-mouse-pointer text-white"
+                className="feather feather-mouse-pointer text-white size-5"
             >
                 <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z">
                 </path>
@@ -18,7 +18,7 @@ export default function Pointer() {
                 </path>
             </svg>
             <div>
-                <div>Henrique</div>
+                <div className="inline-flex rounded-lg font-bold  text-sm bg-blue-500 px-2 rounded-tl-none">Henrique</div>
             </div>
         </div>
     )
