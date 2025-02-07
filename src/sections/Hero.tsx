@@ -37,8 +37,8 @@ export default function Hero() {
                     that keeps you in your creative flow.
                 </p>
 
-                <form className="flex border border-white/15 rounded-lg p-2 mt-8 md:max-w-lg mx-auto">
-                    <input type="email" placeholder="Enter your email" className="bg-transparent px-4 md:flex-1" />
+                <form className="flex  border border-white/15 rounded-lg p-2 mt-8 md:max-w-lg mx-auto">
+                    <input type="email" placeholder="Enter your email" className="bg-transparent px-4 md:flex-1 w-full " />
                     <Button size="sm" variant="primary" type="submit" className="whitespace-nowrap ml-[-30px]">Sign Up</Button>
                 </form>
             </div>
