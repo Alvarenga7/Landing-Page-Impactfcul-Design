@@ -5,6 +5,7 @@ import avatar2 from "@/assets/images/avatar-florence-shaw.jpg"
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg"
 import avatar4 from "@/assets/images/avatar-owen-garcia.jpg"
 import Image from "next/image";
+import Avatar from "@/components/Avatar";
 
 const features = [
     "Asset Library",
