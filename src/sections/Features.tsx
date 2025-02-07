@@ -1,4 +1,5 @@
 import Tag from "@/components/Tag";
+import FeatureCard from "@/components/FeatureCard";
 
 const features = [
     "Asset Library",
@@ -19,31 +20,30 @@ export default function Features() {
                 </div>
                 <h2 className="text-6xl font-medium text-center mt-6">
                     Where power meets
-                     <span className="text-lime-400">simplicity</span></h2>
-                <div>
-                    <div>
-                        <div></div>
-                        <div>
-                            <h3>Real time Collaboration</h3>
-                            <p>Work together seamlessly with conflict-free editing</p>
-                        </div>
-                    </div>
+                     <span className="text-lime-400">simplicity
+                        </span>
+                        </h2>
+                <div className="mt-12 grid grid-cols-1 gap-8">
+                     <FeatureCard 
+                     title="Real time Collaboration" 
+                     description="Work together seamlessly with conflict-free editing"
+                     >
+                        
 
-                    <div>
-                        <div></div>
-                        <div>
-                            <h3>Interactive Prototyping</h3>
-                            <p>Engage your clients with prototypes that react to user </p>
-                        </div>
-                    </div>
+                     </FeatureCard>
+
+                     <FeatureCard 
+                     title="Interactive Prototyping" 
+                     description="Engage your clients with prototypes that react to user">
+                        
+                     </FeatureCard>
+
+                     <FeatureCard 
+                     title="Keyboard Quick Actions" 
+                     description="Powerful commands to help you create designs more quickly">
+                        
+                     </FeatureCard>
                     
-                    <div>
-                        <div></div>
-                        <div>
-                            <h3>Kyeboard Quick Actions </h3>
-                            <p>Powerful commands to help you create designs more quickly</p>
-                        </div>
-                    </div>
                 </div>
                 <div>
                     {features.map(feature =>(
