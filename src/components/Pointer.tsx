@@ -1,4 +1,9 @@
-export default function Pointer() {
+import { twMerge } from "tailwind-merge";
+
+export default function Pointer(props:{
+    name: string; color?: 'red' | 'blue';
+}) {
+    const{ name, color } = props;
     return (
         <div>
             <svg xmlns="http://www.w3.org/2000/svg"
@@ -17,8 +22,8 @@ export default function Pointer() {
                 <path d="M13 13l6 6">
                 </path>
             </svg>
-            <div>
-                <div className="inline-flex rounded-lg font-bold  text-sm bg-blue-500 px-2 rounded-tl-none">Henrique</div>
+            <div className="absolute  top-full lef-full">
+                <div className={twMerge("inline-flex rounded-lg font-bold  text-sm bg-blue-500 px-2 rounded-tl-none", color === 'red' && "bg-red-500")}>{name}</div>
             </div>
         </div>
     )
