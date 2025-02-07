@@ -18,22 +18,22 @@ const features = [
 ];
 
 export default function Features() {
-    return(
+    return (
         <section className="py-24">
             <div className="container">
                 <div className="flex justify-center ">
-                <Tag>Features</Tag>
+                    <Tag>Features</Tag>
                 </div>
                 <h2 className="text-6xl font-medium text-center mt-6">
                     Where power meets
-                     <span className="text-lime-400">simplicity
-                        </span>
-                        </h2>
+                    <span className="text-lime-400">simplicity
+                    </span>
+                </h2>
                 <div className="mt-12 grid grid-cols-1 gap-8">
-                     <FeatureCard 
-                     title="Real time Collaboration" 
-                     description="Work together seamlessly with conflict-free editing"
-                     >
+                    <FeatureCard
+                        title="Real time Collaboration"
+                        description="Work together seamlessly with conflict-free editing"
+                    >
                         <div className="aspect-video flex items-center justify-center">
                             <Avatar className="z-40">
                                 <Image src={avatar1} alt="Avatar1" className="rounded-full" />
@@ -49,37 +49,51 @@ export default function Features() {
                             <Avatar className="-ml-6 border-transparent">
                                 <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
                                     {Array.from({ length: 3 }).map((_, i) => (
-                                              <span className="size-1.5 rounded-full bg-white inline-fex" 
-                                              key={i}>
-                                              </span>
-                                         
+                                        <span className="size-1.5 rounded-full bg-white inline-fex"
+                                            key={i}>
+                                        </span>
+
                                     ))}
-                                  
+
                                 </div>
                             </Avatar>
                         </div>
 
-                     </FeatureCard>
+                    </FeatureCard>
 
-                     <FeatureCard 
-                     title="Interactive Prototyping" 
-                     description="Engage your clients with prototypes that react to user">
-                        
-                     </FeatureCard>
+                    <FeatureCard
+                        title="Interactive Prototyping"
+                        description="Engage your clients with prototypes that react to user action"
+                    >
 
-                     <FeatureCard 
-                     title="Keyboard Quick Actions" 
-                     description="Powerful commands to help you create designs more quickly">
-                        
-                     </FeatureCard>
-                    
+                        <div className="aspect-video flex items-center justify-center">
+                            <p className="text-4xl font-extrabold text-white/20 text-center">
+                            We've achieved{" "}
+                             <span className="bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                                incredible
+                                </span> {" "}
+                                 growth this year
+                                 </p>
+                        </div>
+
+                    </FeatureCard>
+
+
+                    <FeatureCard
+                        title="Keyboard Quick Actions"
+                        description="Powerful commands to help you create designs more quickly"
+                        >
+                          
+
+                    </FeatureCard>
+
                 </div>
                 <div>
-                    {features.map(feature =>(
-                            <div key={feature}>
-                                <span></span>
-                                <span>{features}</span>
-                            </div>
+                    {features.map(feature => (
+                        <div key={feature}>
+                            <span></span>
+                            <span>{features}</span>
+                        </div>
                     ))}
                 </div>
             </div>
