@@ -5,10 +5,10 @@ export default function Tag(props: HTMLAttributes<HTMLDivElement>) {
     const { className, children, ...otherProps } = props;
 
     return (
-        <div className={twMerge("", className)} {...otherProps}>
+        <div className={twMerge("inline-flex border border-lime-400 gap-2 text-lime-400 px-3 py-1 rounded-lg uppercase items-center", className)} {...otherProps}>
 
             <span>&#10038;</span>
-            <span>{children}</span>
+            <span className="text-sm">{children}</span>
 
         </div>
 
