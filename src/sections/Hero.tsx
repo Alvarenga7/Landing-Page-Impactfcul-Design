@@ -20,8 +20,12 @@ export default function Hero() {
                      alt="Example2" 
                      />
                 </div>
-                <div className="absolute">
-                    <Pointer />
+                <div className="absolute left-56 top-96">
+                    <Pointer name="Henrique" />
+                </div>
+
+                <div className="absolute right-80 -top-4 ">
+                    <Pointer name="Alvarenga" color="red" />
                 </div>
                 <div className="flex justify-center ">
                     <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg text-neutral-950 font-semibold">
