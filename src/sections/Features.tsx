@@ -34,18 +34,29 @@ export default function Features() {
                      title="Real time Collaboration" 
                      description="Work together seamlessly with conflict-free editing"
                      >
-                        <div>
-                            <div>
-                                <Image src={avatar1} alt="Avatar1" />
-                            </div>
+                        <div className="aspect-video flex items-center justify-center">
+                            <Avatar className="z-40">
+                                <Image src={avatar1} alt="Avatar1" className="rounded-full" />
+                            </Avatar>
 
-                            <div>
-                                <Image src={avatar2} alt="Avatar1" />
-                            </div>
+                            <Avatar className="-ml-6 border-indigo-500 z-30">
+                                <Image src={avatar2} alt="Avatar1" className="rounded-full" />
+                            </Avatar>
 
-                            <div>
-                                <Image src={avatar3} alt="Avatar1" />
-                            </div>
+                            <Avatar className="-ml-6 border-amber-500 z-20">
+                                <Image src={avatar3} alt="Avatar1" className="rounded-full" />
+                            </Avatar>
+                            <Avatar className="-ml-6 border-transparent">
+                                <div className="size-full bg-neutral-700 rounded-full inline-flex items-center justify-center gap-1">
+                                    {Array.from({ length: 3 }).map((_, i) => (
+                                              <span className="size-1.5 rounded-full bg-white inline-fex" 
+                                              key={i}>
+                                              </span>
+                                         
+                                    ))}
+                                  
+                                </div>
+                            </Avatar>
                         </div>
 
                      </FeatureCard>
