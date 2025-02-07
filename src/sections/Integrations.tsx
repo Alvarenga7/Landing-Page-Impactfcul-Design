@@ -1,3 +1,5 @@
+import Tag from "@/components/Tag";
+
 const integrations = [
     { name: "Figma", icon: "figma-logo.svg", description: "Figma is a collaborative interface design tool." },
     { name: "Notion", icon: "notion-logo.svg", description: "Notion is an all-in-one workspace for notes and docs." },
@@ -8,5 +10,24 @@ const integrations = [
 ];
 
 export default function Integrations() {
-    return <div>Integrations</div>;
+    return(
+        <section>
+            <div className="container">
+                <Tag>Integrations</Tag>
+                <h2>Plays well with <span>others</span>
+                </h2>
+                <p>Layers seamlessly connects with your favorite tool, making it easy to plug into any</p>
+                <div>
+                    {integrations.map(integration =>(
+                        <div key={integration.name}>
+                            <div></div>
+                            <h3>{integration.name}</h3>
+                            <p>{integration.description}</p>
+
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </section>
+    );
 }

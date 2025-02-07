@@ -13,6 +13,7 @@ export default function Introduction() {
                     <span> Your creative process deserver better. </span> {" "}
                     <span className="text-white/15">{text}</span>
                     <span className="text-lime-400 block">That&apos;s why we built Layers.</span>
+                    
                 </div>
             </div>
         </section>
