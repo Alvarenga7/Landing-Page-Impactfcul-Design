@@ -83,7 +83,11 @@ export default function Features() {
                         title="Keyboard Quick Actions"
                         description="Powerful commands to help you create designs more quickly"
                         >
-                          
+                            <div className="aspect-video flex items-center justify-center ">
+                                <div>shift</div>
+                                <div>alt</div>
+                                <div>C</div>
+                            </div>
 
                     </FeatureCard>
 
