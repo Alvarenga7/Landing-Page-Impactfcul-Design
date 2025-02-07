@@ -4,6 +4,7 @@ import avatar1 from "@/assets/images/avatar-ashwin-santiago.jpg"
 import avatar2 from "@/assets/images/avatar-florence-shaw.jpg"
 import avatar3 from "@/assets/images/avatar-lula-meyers.jpg"
 import avatar4 from "@/assets/images/avatar-owen-garcia.jpg"
+import Image from "next/image";
 
 const features = [
     "Asset Library",
@@ -32,7 +33,19 @@ export default function Features() {
                      title="Real time Collaboration" 
                      description="Work together seamlessly with conflict-free editing"
                      >
+                        <div>
+                            <div>
+                                <Image src={avatar1} alt="Avatar1" />
+                            </div>
 
+                            <div>
+                                <Image src={avatar2} alt="Avatar1" />
+                            </div>
+
+                            <div>
+                                <Image src={avatar3} alt="Avatar1" />
+                            </div>
+                        </div>
 
                      </FeatureCard>
 
