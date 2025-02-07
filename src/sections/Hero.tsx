@@ -2,6 +2,7 @@ import Button from "@/components/Button";
 import DesignExampleUm from "@/assets/images/design-example-1.png"
 import DesignExampleDois from "@/assets/images/design-example-2.png"
 import Image from "next/image";
+import Pointer from "@/components/Pointer";
 
 export default function Hero() {
     return (
@@ -18,6 +19,9 @@ export default function Hero() {
                      src={DesignExampleDois}
                      alt="Example2" 
                      />
+                </div>
+                <div className="absolute">
+                    <Pointer />
                 </div>
                 <div className="flex justify-center ">
                     <div className="inline-flex py-1 px-3 bg-gradient-to-r from-purple-400 to-pink-400 rounded-lg text-neutral-950 font-semibold">
