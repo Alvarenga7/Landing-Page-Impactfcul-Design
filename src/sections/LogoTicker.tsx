@@ -27,7 +27,7 @@ export default function LogoTicker() {
                 <div className="overflow-hidden mt-12 [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <div className="flex gap-24 pr-24">
                         {logos.map(logo =>(
-                            <Image src={logo.image} key={logo.nome} alt={logo.name} />
+                            <Image src={logo.image} key={logo.name} alt={logo.name} />
                         ))}
                     </div>
                 </div>

@@ -21,7 +21,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
             <body
+            
                 className={`${inter.variable} font-sans antialiased bg-neutral-950 text-white pb-[1000px]`}
             >
                 {children}
